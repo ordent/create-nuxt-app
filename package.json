@@ -31,7 +31,7 @@
     "url": "https://github.com/ordent/create-nuxt-app/issues"
   },
   "homepage": "https://github.com/ordent/create-nuxt-app#readme",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "ava.config.js",
   "keywords": [
     "nuxt",
