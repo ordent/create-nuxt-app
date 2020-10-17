@@ -26,5 +26,5 @@
     "stylelint": "^13.7.2",
     "stylelint-config-standard": "^20.0.0"
   },
-  "name": "create-nuxt-app"
+  "name": "@ordentco/create-nuxt-app"
 }
