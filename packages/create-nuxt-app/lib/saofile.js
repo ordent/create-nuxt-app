@@ -69,6 +69,14 @@ module.exports = {
       })
     }
 
+    if(this.answers.ui === 'tailwind'){
+      actions.push({
+        type: 'add',
+        files: '**',
+        templateDir: join(frameworksDir, 'tailwind-component')
+      })
+    }
+
     if (this.answers.test !== 'none') {
       actions.push({
         type: 'add',

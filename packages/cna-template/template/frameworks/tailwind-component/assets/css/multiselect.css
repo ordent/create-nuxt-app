@@ -1,0 +1,15 @@
+@import 'vue-multiselect/dist/vue-multiselect.min.css';
+
+.multiselect__placeholder {
+  font-size: small;
+}
+
+.multiselect__option--highlight,
+.multiselect__option--highlight:after,
+.multiselect__tag {
+  background-color: cornsilk !important;
+}
+.multiselect__option--selected.multiselect__option--highlight,
+.multiselect__option--selected.multiselect__option--highlight:after {
+  background-color: crimson !important;
+}

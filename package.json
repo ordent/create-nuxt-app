@@ -4,7 +4,7 @@
     "packages/*"
   ],
   "repository": {
-    "url": "git+https://github.com/nuxt/create-nuxt-app.git",
+    "url": "git+https://github.com/ordent/create-nuxt-app.git",
     "type": "git"
   },
   "scripts": {
