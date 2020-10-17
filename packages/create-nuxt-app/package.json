@@ -1,5 +1,5 @@
 {
-  "name": "create-nuxt-app",
+  "name": "@ordentco/create-nuxt-app",
   "version": "3.4.0",
   "description": "Create a Nuxt.js App in seconds.",
   "bin": "lib/cli.js",

@@ -9,7 +9,7 @@ const { version } = require('../package.json')
 
 const generator = path.resolve(__dirname, './')
 
-const cli = cac('create-nuxt-app')
+const cli = cac('@ordentco/create-nuxt-app')
 
 const showEnvInfo = async () => {
   console.log(chalk.bold('\nEnvironment Info:'))
@@ -18,7 +18,7 @@ const showEnvInfo = async () => {
       System: ['OS', 'CPU'],
       Binaries: ['Node', 'Yarn', 'npm'],
       Browsers: ['Chrome', 'Edge', 'Firefox', 'Safari'],
-      npmGlobalPackages: ['nuxt', 'create-nuxt-app']
+      npmGlobalPackages: ['nuxt', '@ordentco/create-nuxt-app']
     })
   console.log(result)
   process.exit(1)
