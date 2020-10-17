@@ -26,5 +26,18 @@
     "stylelint": "^13.7.2",
     "stylelint-config-standard": "^20.0.0"
   },
-  "name": "@ordentco/create-nuxt-app"
+  "name": "@ordentco/create-nuxt-app",
+  "description": "![create-nuxt-app](https://user-images.githubusercontent.com/904724/85284101-daf3fc00-b48e-11ea-93e2-8a9df49153c1.png)",
+  "bugs": {
+    "url": "https://github.com/ordent/create-nuxt-app/issues"
+  },
+  "homepage": "https://github.com/ordent/create-nuxt-app#readme",
+  "version": "1.0.0",
+  "main": "ava.config.js",
+  "keywords": [
+    "nuxt",
+    "components"
+  ],
+  "author": "Dimas Satrio",
+  "license": "ISC"
 }
