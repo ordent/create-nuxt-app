@@ -1,6 +1,6 @@
 {
   "name": "@ordentco/cna-template",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Templates for Create Nuxt App.",
   "files": [
     "template"
