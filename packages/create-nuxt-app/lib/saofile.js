@@ -3,7 +3,7 @@ const spawn = require('cross-spawn')
 const validate = require('validate-npm-package-name')
 const pkg = require('./package')
 
-const cnaTemplateDir = join(dirname(require.resolve('cna-template/package.json')))
+const cnaTemplateDir = join(dirname(require.resolve('@ordentco/cna-template/package.json')))
 const templateDir = join(cnaTemplateDir, 'template')
 const frameworksDir = join(templateDir, 'frameworks')
 
@@ -69,13 +69,11 @@ module.exports = {
       })
     }
 
-    if(this.answers.ui === 'tailwind'){
-      actions.push({
-        type: 'add',
-        files: '**',
-        templateDir: join(frameworksDir, 'tailwind-component')
-      })
-    }
+    actions.push({
+      type: 'add',
+      files: '**',
+      templateDir: join(frameworksDir, this.answers.type)
+    })
 
     if (this.answers.test !== 'none') {
       actions.push({

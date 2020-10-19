@@ -16,13 +16,14 @@ module.exports = {
       return {}
     }
     const prefix = name === 'nuxt' ? 'nuxt' : `frameworks/${name}`
-    const pkg = this.requireJSON(`cna-template/template/${prefix}/package.json`)
-    const pkgHandler = this.requireFile(`cna-template/template/${prefix}/package.js`)
+    const pkg = this.requireJSON(`@ordentco/cna-template/template/${prefix}/package.json`)
+    const pkgHandler = this.requireFile(`@ordentco/cna-template/template/${prefix}/package.js`)
     return pkgHandler.apply ? pkgHandler.apply(pkg, generator) : pkg
   },
   load (generator) {
     const nuxtPkg = this.loadPackage('nuxt', generator)
     const uiPkg = this.loadPackage(generator.answers.ui, generator)
+    const typePkg = this.loadPackage(generator.answers.type, generator)
     const testPkg = this.loadPackage(generator.answers.test, generator)
     const pkg = merge(nuxtPkg, uiPkg, testPkg)
     pkg.dependencies = sortByKey(pkg.dependencies)

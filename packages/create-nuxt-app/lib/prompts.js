@@ -47,6 +47,16 @@ module.exports = [
     default: 'none'
   },
   {
+    name: 'type',
+    message: 'App Type:',
+    choices: [
+      { name: 'App', value: 'tailwind-component' },
+      { name: 'Dashboard', value: 'tailwind-dashboard' }
+    ],
+    type: 'list',
+    default: 'app'
+  },
+  {
     name: 'features',
     message: 'Nuxt.js modules:',
     type: 'checkbox',
@@ -102,7 +112,7 @@ module.exports = [
       { name: 'Server (Node.js hosting)', value: 'server' },
       { name: 'Static (Static/JAMStack hosting)', value: 'static' }
     ],
-    default: 'server'
+    default: 'static'
   },
   {
     name: 'devTools',
