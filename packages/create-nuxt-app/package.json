@@ -9,7 +9,7 @@
   "dependencies": {
     "cac": "^6.6.1",
     "chalk": "^4.1.0",
-    "@ordentco/cna-template": "^1.0.1",
+    "@ordentco/cna-template": "^1.0.2",
     "cross-spawn": "^7.0.3",
     "envinfo": "^7.7.3",
     "lodash": "^4.17.20",
